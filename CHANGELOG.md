@@ -1,7 +1,14 @@
 # Changelog
 
 All notable changes to lib-input. Versions follow [Semantic Versioning](https://semver.org/)
-(0.x releases may change anything).
+(in 0.x, only a new minor version may break the API; CI enforces it).
+
+## [0.1.1]
+
+### Added
+- The public API is checked in (`pads/api/pads.api`) and CI holds the code to it: `apiCheck` fails on any difference,
+  and `scripts/check-api-compat.sh` fails when an API line is removed since the last release without a breaking
+  version (Droidtop/tracker#867). The API itself is unchanged.
 
 ## [0.1.0]
 

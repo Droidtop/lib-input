@@ -1,0 +1,20 @@
+public final class dev/droidtop/lib/input/PadFamilies {
+	public static final field INSTANCE Ldev/droidtop/lib/input/PadFamilies;
+	public final fun classify (IILjava/lang/String;)Ldev/droidtop/lib/input/PadFamily;
+}
+
+public final class dev/droidtop/lib/input/PadFamily : java/lang/Enum {
+	public static final field Companion Ldev/droidtop/lib/input/PadFamily$Companion;
+	public static final field NINTENDO Ldev/droidtop/lib/input/PadFamily;
+	public static final field PLAYSTATION Ldev/droidtop/lib/input/PadFamily;
+	public static final field XBOX Ldev/droidtop/lib/input/PadFamily;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public final fun getId ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/input/PadFamily;
+	public static fun values ()[Ldev/droidtop/lib/input/PadFamily;
+}
+
+public final class dev/droidtop/lib/input/PadFamily$Companion {
+	public final fun fromId (Ljava/lang/String;)Ldev/droidtop/lib/input/PadFamily;
+}
+
