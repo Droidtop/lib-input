@@ -3,6 +3,14 @@
 All notable changes to lib-input. Versions follow [Semantic Versioning](https://semver.org/)
 (in 0.x, only a new minor version may break the API; CI enforces it).
 
+## [0.1.2]
+
+### Added
+- `FaceLayout`, `FaceRole`, `FacePosition` and `LayoutSource` in `:pads`: how a pad's face buttons behave (which one
+  confirms, whether the system reports them swapped) and the glyph printed on the button that does each job. This is
+  droidtop runtime-common's `FaceLayout.kt` over `PadFamily`, so droidtop's shared UI can draw its hints from here
+  (Droidtop/tracker#867, the owner's "FaceRole to lib-input"). New tests cover it; droidtop had none.
+
 ## [0.1.1]
 
 ### Added

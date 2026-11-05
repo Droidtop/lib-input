@@ -7,7 +7,7 @@ app's own vocabulary on top".
 
 | Module | Holds |
 |---|---|
-| [`:pads`](pads) | `PadFamily` (what a pad's face buttons print: Xbox, PlayStation or Nintendo) and `PadFamilies.classify`, from SDL's vendor and product ids (`SdlControllerIds`, generated) and the rules SDL applies around them. Plain JVM |
+| [`:pads`](pads) | `PadFamily` (what a pad's face buttons print: Xbox, PlayStation or Nintendo), `FaceLayout` and `FaceRole` (which button confirms, and the glyph on the button for each job), and `PadFamilies.classify`, from SDL's vendor and product ids (`SdlControllerIds`, generated) and the rules SDL applies around them. Plain JVM |
 
 `:pads` is droidtop's `ControllerClassifier` and Enginehost's `PadFamilies.classify` with their generated
 `SdlControllerIds`, which were the same code twice. Each program keeps its own names (`GlyphFamily`,

@@ -1,3 +1,62 @@
+public final class dev/droidtop/lib/input/FaceLayout {
+	public static final field Companion Ldev/droidtop/lib/input/FaceLayout$Companion;
+	public fun <init> (Ldev/droidtop/lib/input/PadFamily;ZZLdev/droidtop/lib/input/LayoutSource;)V
+	public final fun component1 ()Ldev/droidtop/lib/input/PadFamily;
+	public final fun component2 ()Z
+	public final fun component3 ()Z
+	public final fun component4 ()Ldev/droidtop/lib/input/LayoutSource;
+	public final fun copy (Ldev/droidtop/lib/input/PadFamily;ZZLdev/droidtop/lib/input/LayoutSource;)Ldev/droidtop/lib/input/FaceLayout;
+	public static synthetic fun copy$default (Ldev/droidtop/lib/input/FaceLayout;Ldev/droidtop/lib/input/PadFamily;ZZLdev/droidtop/lib/input/LayoutSource;ILjava/lang/Object;)Ldev/droidtop/lib/input/FaceLayout;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getConfirmOnRight ()Z
+	public final fun getFamily ()Ldev/droidtop/lib/input/PadFamily;
+	public final fun getKeysSwapped ()Z
+	public final fun getKnown ()Z
+	public final fun getSource ()Ldev/droidtop/lib/input/LayoutSource;
+	public final fun getSwapped ()Z
+	public final fun glyph (Ldev/droidtop/lib/input/FaceRole;)Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun positionOf (Ldev/droidtop/lib/input/FaceRole;)Ldev/droidtop/lib/input/FacePosition;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/input/FaceLayout$Companion {
+	public final fun captured (Z)Ldev/droidtop/lib/input/FaceLayout;
+	public final fun forFamily (Ldev/droidtop/lib/input/PadFamily;Ldev/droidtop/lib/input/LayoutSource;)Ldev/droidtop/lib/input/FaceLayout;
+	public final fun getDEFAULT ()Ldev/droidtop/lib/input/FaceLayout;
+	public final fun printed (Ldev/droidtop/lib/input/PadFamily;Ldev/droidtop/lib/input/FacePosition;)Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/input/FacePosition : java/lang/Enum {
+	public static final field BOTTOM Ldev/droidtop/lib/input/FacePosition;
+	public static final field LEFT Ldev/droidtop/lib/input/FacePosition;
+	public static final field RIGHT Ldev/droidtop/lib/input/FacePosition;
+	public static final field TOP Ldev/droidtop/lib/input/FacePosition;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/input/FacePosition;
+	public static fun values ()[Ldev/droidtop/lib/input/FacePosition;
+}
+
+public final class dev/droidtop/lib/input/FaceRole : java/lang/Enum {
+	public static final field CANCEL Ldev/droidtop/lib/input/FaceRole;
+	public static final field CONFIRM Ldev/droidtop/lib/input/FaceRole;
+	public static final field X Ldev/droidtop/lib/input/FaceRole;
+	public static final field Y Ldev/droidtop/lib/input/FaceRole;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/input/FaceRole;
+	public static fun values ()[Ldev/droidtop/lib/input/FaceRole;
+}
+
+public final class dev/droidtop/lib/input/LayoutSource : java/lang/Enum {
+	public static final field CAPTURED Ldev/droidtop/lib/input/LayoutSource;
+	public static final field CONSOLE Ldev/droidtop/lib/input/LayoutSource;
+	public static final field FAMILY Ldev/droidtop/lib/input/LayoutSource;
+	public static final field UNKNOWN Ldev/droidtop/lib/input/LayoutSource;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/input/LayoutSource;
+	public static fun values ()[Ldev/droidtop/lib/input/LayoutSource;
+}
+
 public final class dev/droidtop/lib/input/PadFamilies {
 	public static final field INSTANCE Ldev/droidtop/lib/input/PadFamilies;
 	public final fun classify (IILjava/lang/String;)Ldev/droidtop/lib/input/PadFamily;
